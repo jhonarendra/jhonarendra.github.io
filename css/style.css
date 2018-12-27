@@ -515,7 +515,7 @@ article, aside, footer, header, hgroup, main, nav, section{
 }
 .jo-project{
 	height:300px;
-	width: 300px;
+	width: 450px;
 	overflow:hidden;
 	border-radius: 7px;
   flex: 0 0 auto;
@@ -867,6 +867,10 @@ background: #eee;
 	.jo-project img {
 		height: 200px
 	}
+	.jo-project {
+		height:200px;
+		width: 300px;
+	}
 	.jo-project-wrapper{
 		height: 400px;
 	}
@@ -875,9 +879,9 @@ background: #eee;
 	#jo-header #jo-logo{
 		display: block;
 	}
-	#jo-header img{
+	/*#jo-header img{
 		visibility:hidden;
-	}
+	}*/
 	.jo-col3, .jo-col4, .jo-col6, .jo-col9, .jo-col12{
 		float: none;
 		width: 100%
