@@ -959,7 +959,10 @@ background: #eee;
 	.jo-bg-project{
 		height: 800px;
 	}
-	#left1.jo-btn-left{
+	#left1.jo-btn-left, #right1.jo-btn-right, #left2.jo-btn-left, #right2.jo-btn-right {
+		display: none;
+	}
+	/*#left1.jo-btn-left{
 		top: 307px;
 	}
 	#right1.jo-btn-right{
@@ -972,7 +975,7 @@ background: #eee;
 	#right2.jo-btn-right{
 		right: 0;
 		top: 557px;
-	}
+	}*/
 	#jo-post{
 		height: 2500px;
 	}
