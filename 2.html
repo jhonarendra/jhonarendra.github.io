@@ -21,6 +21,9 @@
         body{
             font-family: 'Questrial', sans-serif;
         }
+        .jo-hide{
+            visibility: hidden;
+        }
 
         /* NAVBAR */
         .jo-logo{transform:scale(.2);position:absolute;top:15px}.jo-logo div:nth-child(2){background:#000}.jo-logo div{position:absolute}.jo-logo :first-child{top:10px;width:100px;height:100px;border-radius:50%;background:transparent;border:20px solid #fff;animation:mulut 5s infinite}.jo-logo div:nth-child(2){top:9px;background:#000;width:100px;height:50px}.jo-logo div:nth-child(3){background:#2196f3;width:40px;height:40px;border-radius:50%;animation:kedip 5s infinite}.jo-logo div:nth-child(4){top:10px;left:60px;background:#fff;width:40px;height:20px}@keyframes kedip{0%{border-radius:0;top:10px;height:20px}5%,100%{border-radius:50%;top:0;height:40px}}@keyframes mulut{0%,79%{background:transparent}80%,100%{background:#fff}}.navbar-dark .navbar-nav .nav-link,.navbar-dark .navbar-nav .nav-link:focus,.navbar-dark .navbar-nav .nav-link:hover{color:#fff;font-size:14px}.navbar-dark .navbar-toggler{border-color:#000;color:#fff;font-size:14px}
@@ -31,6 +34,7 @@
             background: #000;
             height: 5000px;
             width: 100%;
+            overflow: hidden;
         }
         .grafis img{
             position: absolute;
@@ -47,19 +51,69 @@
         .grafis img:nth-child(1){
             top:400px;
             left:-2px;
+            animation: fadeLeftJon 2.5s;
         }
         .grafis img:nth-child(2){
             right: 0;
             top:300px;
+            animation: fadeRightJon 2.5s;
         }
         .grafis img:nth-child(3){
             left:50%;margin-left:-266px;top:100px;
+            animation: fade1Jon 1s;
         }
         .grafis img:nth-child(4){
             left:100px;top:300px;
+            animation: fade3Jon 2s;
         }
         .grafis img:nth-child(5){
             right: 100px;top:200px;
+            animation: fade2Jon 1.5s;
+        }
+
+        @keyframes fadeLeftJon{
+            0%,60%{
+                opacity: 0;
+                left:-100px;
+            }
+            100%{
+                opacity: 1;
+                left:-2;
+            }
+        }
+        @keyframes fadeRightJon{
+            0%,80%{
+                opacity: 0;
+                right:-100px;
+            }
+            100%{
+                opacity: 1;
+                right:0;
+            }
+        }
+        @keyframes fade1Jon{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        @keyframes fade2Jon{
+            0%,25%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        @keyframes fade3Jon{
+            0%,50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
         }
 
 
@@ -75,13 +129,37 @@
             }
             .grafis img:nth-child(2){
                 top:150px;
-                right:-90px;
+                right:-95px;
             }
 
             .grafis img:nth-child(3){
                 left:50%;margin-left:-266px;top:50px;
             }
             #home .content-main{margin-top:50px}
+
+
+
+
+            @keyframes fadeLeftJon{
+                0%,60%{
+                    opacity: 0;
+                    left:-222px;
+                }
+                100%{
+                    opacity: 1;
+                    left:-122px;
+                }
+            }
+            @keyframes fadeRightJon{
+                0%,80%{
+                    opacity: 0;
+                    right:-195px;
+                }
+                100%{
+                    opacity: 1;
+                    right:-95px;
+                }
+            }
         }
 
         @media screen and (max-width: 768px){
@@ -110,6 +188,26 @@
             }
             .grafis img:nth-child(2){
                 right:-111px;
+            }
+            @keyframes fadeLeftJon{
+                0%,60%{
+                    opacity: 0;
+                    left:-246px;
+                }
+                100%{
+                    opacity: 1;
+                    left:-146px;
+                }
+            }
+            @keyframes fadeRightJon{
+                0%,80%{
+                    opacity: 0;
+                    right:-211px;
+                }
+                100%{
+                    opacity: 1;
+                    right:-111px;
+                }
             }
         }
     </style>
