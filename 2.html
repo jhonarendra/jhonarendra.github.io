@@ -24,6 +24,14 @@
         .jo-hide{
             visibility: hidden;
         }
+        .btn-outline-jon{
+            border:2px solid #0000ff;
+            border-radius: 25px;
+        }
+        .btn-jon{
+            background: #0000ff;
+            border-radius: 25px;
+        }
 
         /* NAVBAR */
         .jo-logo{transform:scale(.2);position:absolute;top:15px}.jo-logo div:nth-child(2){background:#000}.jo-logo div{position:absolute}.jo-logo :first-child{top:10px;width:100px;height:100px;border-radius:50%;background:transparent;border:20px solid #fff;animation:mulut 5s infinite}.jo-logo div:nth-child(2){top:9px;background:#000;width:100px;height:50px}.jo-logo div:nth-child(3){background:#2196f3;width:40px;height:40px;border-radius:50%;animation:kedip 5s infinite}.jo-logo div:nth-child(4){top:10px;left:60px;background:#fff;width:40px;height:20px}@keyframes kedip{0%{border-radius:0;top:10px;height:20px}5%,100%{border-radius:50%;top:0;height:40px}}@keyframes mulut{0%,79%{background:transparent}80%,100%{background:#fff}}.navbar-dark .navbar-nav .nav-link,.navbar-dark .navbar-nav .nav-link:focus,.navbar-dark .navbar-nav .nav-link:hover{color:#fff;font-size:14px}.navbar-dark .navbar-toggler{border-color:#000;color:#fff;font-size:14px}
@@ -39,14 +47,43 @@
         .grafis img{
             position: absolute;
         }
-
+        h2 {
+            font-weight:bold;
+            color:#0000ff;
+            text-shadow:1px -1px 0 #fff;
+        }
         main{
             position: absolute;
             width: 100%;
             top:100px;
             color: #fff;
         }
-        #home h4{font-size:40px;text-align:center}#home .content-main{margin-top:100px}.content__container{font-size:40px;color:#fff;overflow:hidden;height:45px;width:100%;margin:0 auto;margin-bottom:20px;text-align:center}.content__container__list{padding:0;list-style:none;-webkit-animation-name:change;-webkit-animation-duration:10s;-webkit-animation-iteration-count:infinite;animation-name:change;animation-duration:10s;animation-iteration-count:infinite}.content__container__list__item{line-height:42px;margin:0}
+        #home h4{font-size:40px;text-align:center}#home .content-main{margin-top:100px}.content__container{font-size:40px;color:#fff;overflow:hidden;height:45px;width:100%;margin:0 auto;margin-bottom:20px;text-align:center}.content__container__list{padding:0;list-style:none;-webkit-animation-name:change;-webkit-animation-duration:10s;-webkit-animation-iteration-count:infinite;animation-name:change;animation-duration:10s;animation-iteration-count:infinite}.content__container__list__item{line-height:42px;margin:0}#home .btn{margin-left:10px;margin-right: 10px;cursor:pointer;}
+
+
+        .profil-content{
+            margin-top:300px;
+        }
+        .profil-content .bg-jon img{
+            animation: rotateJon 20s linear infinite;
+        }
+        .foto-jon{
+            position: absolute;right:39px;top:31px
+        }
+        .profil-content .fotonya-jon{
+            text-align: right;
+        }
+
+
+
+        @keyframes rotateJon{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
 
         .grafis img:nth-child(1){
             top:400px;
@@ -68,7 +105,15 @@
         }
         .grafis img:nth-child(5){
             right: 100px;top:200px;
-            animation: fade2Jon 1.5s;
+            animation: fade2Jon 1.5s, rotateJon 10s linear infinite;;
+        }
+        .grafis img:nth-child(6){
+            top:700px;
+            left:500px;
+        }
+        .grafis img:nth-child(7){
+            top: 920px;
+            left: 480px;
         }
 
         @keyframes fadeLeftJon{
@@ -137,7 +182,9 @@
             }
             #home .content-main{margin-top:50px}
 
-
+            .profil-content{
+                margin-top:200px;
+            }
 
 
             @keyframes fadeLeftJon{
@@ -160,6 +207,15 @@
                     right:-95px;
                 }
             }
+
+            .grafis img:nth-child(6){
+                top:600px;
+                left:300px;
+            }
+            .grafis img:nth-child(7){
+                top:780px;
+                left:200px;
+            }
         }
 
         @media screen and (max-width: 768px){
@@ -174,6 +230,16 @@
             }
             .grafis img:nth-child(5){
                 right: 10px;top:60px;
+            }
+            .profil-content, .profil-content .fotonya-jon{
+                text-align: center;
+            }
+            .foto-jon{
+                right: 50%;
+                margin-right: -85px;
+            }
+            .profil-content .bg-jon, .profil-content .foto-jon{
+                transform: scale(.7);
             }
         }
         @media screen and (max-width: 425px){
@@ -257,6 +323,9 @@
         <img src="images/comp/lingkhead.png">
         <img src="images/comp/lingk3.png">
         <img src="images/comp/lingkdotted.png">
+
+        <img src="images/comp/lingktrans.png">
+        <img src="images/comp/lingkdotted.png">
     </div>
 
     <main>
@@ -272,7 +341,32 @@
                             <li class="content__container__list__item">Blogger</li>
                         </ul>
                     </div>
-                    <p class="text-center pt-3" style="font-size: 20px">Masih pemula dan masih perlu banyak belajar.</p>
+                    <p class="text-center pt-3" style="font-size: 20px">Dari belajar aku belajar bahwa dengan belajar aku bisa belajar untuk belajar</p>
+                    <p class="text-center pt-3">
+                        <a class="btn btn-outline-jon btn-lg">Selengkapnya</a>
+                        <a class="btn btn-jon btn-lg">Kontak</a>
+                    </p>
+                </div>
+            </div>
+            <div id="profil">
+                <div class="profil-content row">
+                    <div class="col-md-6 fotonya-jon">
+                        <div class="bg-jon">
+                            <img src="images/comp/lingkgarisfoto.png">
+                        </div>
+                        <div class="foto-jon">
+                            <img src="images/comp/fotojhonarendra.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Putu Jhonarendra</h2>
+                        <p class="pt-3">Seorang mahasiswa TI di salah satu universitas di Bali. Ia tertarik dengan pemrograman, komputer dan teknologi. Pemrograman yang paling disukainya adalah pemrograman web. "Dulu awalnya gara-gara main Blogger, edit-edit HTML-nya. Ternyata menyenangkan", katanya.</p>
+                        <p>
+                            <a href="http://www.facebook.com/putujhonarendra98"><img src="images/comp/iconfb.png" style="margin:0 5px 0 0"></a>
+                            <a href="http://www.twitter.com/jonarendra"><img src="images/comp/icontw.png" style="margin:0 5px"></a>
+                            <a href="http://www.instagram.com/jhonarendra"><img src="images/comp/iconig.png" style="margin:0 5px"></a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
