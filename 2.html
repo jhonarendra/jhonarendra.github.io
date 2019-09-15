@@ -37,16 +37,10 @@
         .jo-logo{transform:scale(.2);position:absolute;top:15px}.jo-logo div:nth-child(2){background:#000}.jo-logo div{position:absolute}.jo-logo :first-child{top:10px;width:100px;height:100px;border-radius:50%;background:transparent;border:20px solid #fff;animation:mulut 5s infinite}.jo-logo div:nth-child(2){top:9px;background:#000;width:100px;height:50px}.jo-logo div:nth-child(3){background:#2196f3;width:40px;height:40px;border-radius:50%;animation:kedip 5s infinite}.jo-logo div:nth-child(4){top:10px;left:60px;background:#fff;width:40px;height:20px}@keyframes kedip{0%{border-radius:0;top:10px;height:20px}5%,100%{border-radius:50%;top:0;height:40px}}@keyframes mulut{0%,79%{background:transparent}80%,100%{background:#fff}}.navbar-dark .navbar-nav .nav-link,.navbar-dark .navbar-nav .nav-link:focus,.navbar-dark .navbar-nav .nav-link:hover{color:#fff;font-size:14px}.navbar-dark .navbar-toggler{border-color:#000;color:#fff;font-size:14px}
 
         /* GRAFIS */
-        .grafis{
-            position: relative;
-            background: #000;
-            height: 5000px;
-            width: 100%;
-            overflow: hidden;
-        }
-        .grafis img{
-            position: absolute;
-        }
+        .grafis{position:relative;background:#000;height:5000px;width:100%;overflow:hidden}.grafis img{position:absolute}.grafis img:nth-child(1){top:400px;left:-2px;animation:fadeLeftJon 2.5s}.grafis img:nth-child(2){right:0;top:300px;animation:fadeRightJon 2.5s}.grafis img:nth-child(3){left:50%;margin-left:-266px;top:100px;animation:fade1Jon 1s}.grafis img:nth-child(4){left:100px;top:300px;animation:fade3Jon 2s}.grafis img:nth-child(5){right:100px;top:200px;animation:fade2Jon 1.5s,rotateJon 10s linear infinite}.grafis img:nth-child(6){top:700px;left:500px}.grafis img:nth-child(7){top:920px;left:480px}.grafis img:nth-child(8){top:1200px;left:0}.grafis img:nth-child(9){top:1200px;right:200px}.grafis img:nth-child(10){top:1300px;left:400px}
+
+
+
         h2 {
             font-weight:bold;
             color:#0000ff;
@@ -76,92 +70,11 @@
 
 
 
-        @keyframes rotateJon{
-            0%{
-                transform: rotate(0deg);
-            }
-            100%{
-                transform: rotate(360deg);
-            }
-        }
+        
+        /* ANIMATEJON */
+        @keyframes rotateJon{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes fadeLeftJon{0%,60%{opacity:0;left:-100px}100%{opacity:1;left:-2}}@keyframes fadeRightJon{0%,80%{opacity:0;right:-100px}100%{opacity:1;right:0}}@keyframes fade1Jon{0%{opacity:0}100%{opacity:1}}@keyframes fade2Jon{0%,25%{opacity:0}100%{opacity:1}}@keyframes fade3Jon{0%,50%{opacity:0}100%{opacity:1}}@keyframes fadeJon{0%{opacity:0}100%{opacity:1}}
 
-        .grafis img:nth-child(1){
-            top:400px;
-            left:-2px;
-            animation: fadeLeftJon 2.5s;
-        }
-        .grafis img:nth-child(2){
-            right: 0;
-            top:300px;
-            animation: fadeRightJon 2.5s;
-        }
-        .grafis img:nth-child(3){
-            left:50%;margin-left:-266px;top:100px;
-            animation: fade1Jon 1s;
-        }
-        .grafis img:nth-child(4){
-            left:100px;top:300px;
-            animation: fade3Jon 2s;
-        }
-        .grafis img:nth-child(5){
-            right: 100px;top:200px;
-            animation: fade2Jon 1.5s, rotateJon 10s linear infinite;;
-        }
-        .grafis img:nth-child(6){
-            top:700px;
-            left:500px;
-        }
-        .grafis img:nth-child(7){
-            top: 920px;
-            left: 480px;
-        }
-
-        @keyframes fadeLeftJon{
-            0%,60%{
-                opacity: 0;
-                left:-100px;
-            }
-            100%{
-                opacity: 1;
-                left:-2;
-            }
-        }
-        @keyframes fadeRightJon{
-            0%,80%{
-                opacity: 0;
-                right:-100px;
-            }
-            100%{
-                opacity: 1;
-                right:0;
-            }
-        }
-        @keyframes fade1Jon{
-            0%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-        @keyframes fade2Jon{
-            0%,25%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-        @keyframes fade3Jon{
-            0%,50%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-
-
+        /* ANIMATE RUNNING TEXT */
         @-webkit-keyframes opacity{0%,100%{opacity:0}50%{opacity:1}}@-webkit-keyframes change{0%,12.66%,100%{transform:translate3d(0,0,0)}16.66%,29.32%{transform:translate3d(0,-25%,0)}33.32%,45.98%{transform:translate3d(0,-50%,0)}49.98%,62.64%{transform:translate3d(0,-75%,0)}66.64%,79.3%{transform:translate3d(0,-50%,0)}83.3%,95.96%{transform:translate3d(0,-25%,0)}}@-o-keyframes opacity{0%,100%{opacity:0}50%{opacity:1}}@-o-keyframes change{0%,12.66%,100%{transform:translate3d(0,0,0)}16.66%,29.32%{transform:translate3d(0,-25%,0)}33.32%,45.98%{transform:translate3d(0,-50%,0)}49.98%,62.64%{transform:translate3d(0,-75%,0)}66.64%,79.3%{transform:translate3d(0,-50%,0)}83.3%,95.96%{transform:translate3d(0,-25%,0)}}@-moz-keyframes opacity{0%,100%{opacity:0}50%{opacity:1}}@-moz-keyframes change{0%,12.66%,100%{transform:translate3d(0,0,0)}16.66%,29.32%{transform:translate3d(0,-25%,0)}33.32%,45.98%{transform:translate3d(0,-50%,0)}49.98%,62.64%{transform:translate3d(0,-75%,0)}66.64%,79.3%{transform:translate3d(0,-50%,0)}83.3%,95.96%{transform:translate3d(0,-25%,0)}}@keyframes opacity{0%,100%{opacity:0}50%{opacity:1}}@keyframes change{0%,12.66%,100%{transform:translate3d(0,0,0)}16.66%,29.32%{transform:translate3d(0,-25%,0)}33.32%,45.98%{transform:translate3d(0,-50%,0)}49.98%,62.64%{transform:translate3d(0,-75%,0)}66.64%,79.3%{transform:translate3d(0,-50%,0)}83.3%,95.96%{transform:translate3d(0,-25%,0)}}
         
         @media screen and (max-width: 1024px){
@@ -216,6 +129,18 @@
                 top:780px;
                 left:200px;
             }
+            .grafis img:nth-child(8) {
+              top: 900px;
+              left: 0;
+            }
+            .grafis img:nth-child(9) {
+              top: 900px;
+              right: 100px;
+            }
+            .grafis img:nth-child(10) {
+              top: 1000px;
+              left: 200px;
+            }
         }
 
         @media screen and (max-width: 768px){
@@ -241,6 +166,26 @@
             .profil-content .bg-jon, .profil-content .foto-jon{
                 transform: scale(.7);
             }
+            .grafis img:nth-child(6){
+                top:600px;
+                left:30%;
+                transform: scale(.7);
+            }
+            .grafis img:nth-child(7){
+                top:750px;
+                left:50%;
+                margin-left:-100px;
+                transform: scale(.7);
+            }
+            .grafis img:nth-child(9),.grafis img:nth-child(10){
+                transform: scale(.5);
+            }
+            .grafis img:nth-child(9){
+                right: -100px;
+            }
+            .grafis img:nth-child(8){
+                top:1000px;
+            }
         }
         @media screen and (max-width: 425px){
             .content__container, #home h4 {
@@ -254,6 +199,9 @@
             }
             .grafis img:nth-child(2){
                 right:-111px;
+            }
+            .grafis img:nth-child(6){
+                left:10%;
             }
             @keyframes fadeLeftJon{
                 0%,60%{
@@ -275,6 +223,16 @@
                     right:-111px;
                 }
             }
+            .grafis img:nth-child(8){
+                top: 1200px;
+            }
+            .grafis img:nth-child(9){
+                top: 1100px;
+            }
+            .grafis img:nth-child(10){
+                top: 1200px;
+            }
+
         }
     </style>
 </head>
@@ -324,8 +282,11 @@
         <img src="images/comp/lingk3.png">
         <img src="images/comp/lingkdotted.png">
 
-        <img src="images/comp/lingktrans.png">
-        <img src="images/comp/lingkdotted.png">
+        <img src="images/comp/lingktrans.png" class="jo-show1">
+        <img src="images/comp/lingkdotted.png" class="jo-show1">
+        <img src="images/comp/kotak2kecil.png" class="jo-show1">
+        <img src="images/comp/curl.png" class="jo-show1">
+        <img src="images/comp/lingkgaris.png" class="jo-show1">
     </div>
 
     <main>
@@ -342,9 +303,9 @@
                         </ul>
                     </div>
                     <p class="text-center pt-3" style="font-size: 20px">Dari belajar aku belajar bahwa dengan belajar aku bisa belajar untuk belajar</p>
-                    <p class="text-center pt-3">
-                        <a class="btn btn-outline-jon btn-lg">Selengkapnya</a>
-                        <a class="btn btn-jon btn-lg">Kontak</a>
+                    <p class="text-center">
+                        <a class="btn btn-outline-jon btn-lg mt-3">Selengkapnya</a>
+                        <a class="btn btn-jon btn-lg mt-3">Kontak</a>
                     </p>
                 </div>
             </div>
@@ -354,7 +315,7 @@
                         <div class="bg-jon">
                             <img src="images/comp/lingkgarisfoto.png">
                         </div>
-                        <div class="foto-jon">
+                        <div class="foto-jon jo-show1">
                             <img src="images/comp/fotojhonarendra.png">
                         </div>
                     </div>
@@ -376,9 +337,10 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            var scrollTop = $(window).scrollTop();
+            $(".jo-show1").addClass("jo-hide");
             var currentScrollTop = 0;
             $(window).scroll(function(){
+                // navbar showhide
                 var newScrollTop = $(window).scrollTop();
                 if(currentScrollTop > newScrollTop){
                     $("header").removeClass("animated slideOutUp");
@@ -388,12 +350,20 @@
                     $("header").addClass("animated slideOutUp");
                 }
                 currentScrollTop = newScrollTop;
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function(){
 
+                // object muncul pas di scroll
+                $(".jo-show1").each(function(i){
+                    var offsetTop = $(this).offset().top;
+                    var scrollTop = $(window).scrollTop();
+                    var windowHeight = $(window).height();
+                    var showPoint = scrollTop + windowHeight - 50;
+                    if(showPoint>offsetTop){
+                        $(this).css("visibility","visible");
+                        $(this).css("animation","fadeJon 1s");
+                        $(this).removeClass("jo-hide");
+                    }
+                });
+            });
         });
     </script>
 </body>
