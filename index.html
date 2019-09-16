@@ -47,6 +47,18 @@
             right: 0;
         }
 
+        .grafis img:nth-child(13) {
+            top: 1350px;
+            left: 60%;
+        }
+        .grafis img:nth-child(14) {
+            top: 1400px;
+            right: 100px;
+        }
+        .grafis img:nth-child(15){
+            top:1900px;
+        }
+
 
         h2 {
             font-weight:bold;
@@ -87,6 +99,15 @@
             font-size: 20px;
             margin-top: 20px;
         }
+
+
+
+        #project{
+            margin-top: 200px;
+            text-align: center
+        }
+
+
         
         /* ANIMATEJON */
         @keyframes rotateJon{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes fadeLeftJon{0%,60%{opacity:0;left:-100px}100%{opacity:1;left:-2}}@keyframes fadeRightJon{0%,80%{opacity:0;right:-100px}100%{opacity:1;right:0}}@keyframes fade1Jon{0%{opacity:0}100%{opacity:1}}@keyframes fade2Jon{0%,25%{opacity:0}100%{opacity:1}}@keyframes fade3Jon{0%,50%{opacity:0}100%{opacity:1}}@keyframes fadeJon{0%{opacity:0}100%{opacity:1}}
@@ -170,6 +191,10 @@
                 top:1000px;
                 right:-71px;
             }
+
+            .grafis img:nth-child(13){
+                top: 1250px;
+            }
             @keyframes fadeLeftJon2{0%{opacity:0;left:-179px}100%{opacity:1;left:-79px}}
             @keyframes fadeRightJon2{0%{opacity:0;right:-171px}100%{opacity:1;right:-71px}}
         }
@@ -222,6 +247,15 @@
             }
             .grafis img:nth-child(12){
                 top:900px;
+            }
+            .grafis img:nth-child(13){
+                top: 1400px;
+            }
+            .grafis img:nth-child(14){
+                top: 1900px;
+            }
+            .grafis img:nth-child(15){
+                top: 2200px;
             }
         }
         @media screen and (max-width: 425px){
@@ -279,6 +313,75 @@
 
         }
     </style>
+    <style type="text/css">
+        /* Carousel */
+        #project .card{
+            background-image: linear-gradient(0deg, #000, #0000ff);
+            border:none;
+        }
+        @media (min-width: 768px) {
+          /* show 3 items */
+          .carousel-inner .active,
+          .carousel-inner .active + .carousel-item,
+          .carousel-inner .active + .carousel-item + .carousel-item {
+            display: block;
+          }
+
+          .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+          .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+          .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+            transition: none;
+          }
+
+          .carousel-inner .carousel-item-next,
+          .carousel-inner .carousel-item-prev {
+            position: relative;
+            transform: translate3d(0, 0, 0);
+          }
+
+          .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: absolute;
+            top: 0;
+            right: -33.3333%;
+            z-index: -1;
+            display: block;
+            visibility: visible;
+          }
+
+          /* left or forward direction */
+          .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+          .carousel-item-next.carousel-item-left + .carousel-item,
+          .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+          .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+          }
+
+          /* farthest right hidden item must be abso position for animations */
+          .carousel-inner .carousel-item-prev.carousel-item-right {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: block;
+            visibility: visible;
+          }
+
+          /* right or prev direction */
+          .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+          .carousel-item-prev.carousel-item-right + .carousel-item,
+          .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+          .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+          }
+        }
+
+    </style>
 </head>
 <body>
     <header class="navbar navbar-dark fixed-top navbar-expand-lg bg-dark animated slideInDown" style="background: #000!important">
@@ -334,6 +437,10 @@
 
         <img src="images/comp/awan3.png" class="jo-show2">
         <img src="images/comp/awan4.png" class="jo-show3">
+        <img src="images/comp/lingk3.png" class="jo-show3">
+        <img src="images/comp/lingkdotted.png" class="jo-show1">
+        <img src="images/comp/kotak2besar.png" class="jo-show1">
+
     </div>
 
     <main>
@@ -413,6 +520,70 @@
                         <h3>Analisis & Desain Sistem</h3>
                         <p>Membuat gambaran umum sistem, flowchart dsb yang baik dan benar</p>
                     </div>
+                </div>
+            </div>
+            <div id="project">
+                <h2>{Pro}ect</h2>
+                <p style="font-size: 20px">Beberapa projek yang dibuat semasa kuliah, ada yang individu, ada yang kelompok</p>
+                <div id="myCarousel" class="carousel slide mt-5" data-ride="carousel">
+                  <div class="carousel-inner row w-100 mx-auto">
+                    <div class="carousel-item col-md-4 active">
+                      <div class="card">
+                        <img class="card-img-top img-fluid" src="images/prognet8.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Website Restoran dengan Framework Laravel</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                      <div class="card">
+                        <img class="card-img-top img-fluid" src="images/belajar-geometri.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Aplikasi Android Belajar Geometri</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                      <div class="card">
+                        <img class="card-img-top img-fluid" src="images/v4.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Template HTML kreasi sendiri</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                      <div class="card">
+                        <img class="card-img-top img-fluid" src="images/penghitung-kata.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Aplikasi Text Processing dengan PHP</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                      <div class="card">
+                        <img class="card-img-top img-fluid" src="images/v2.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Template HTML kreasi sendiri</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item col-md-4">
+                      <div class="card">
+                        <img class="card-img-top img-fluid" src="images/form-html.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Belajar HTML: Membuat Form</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
                 </div>
             </div>
         </div>
@@ -499,6 +670,34 @@
                 }, 1000);
             });
         });
+    </script>
+    <script type="text/javascript">
+        // carousel
+        $(document).ready(function() {
+          $("#myCarousel").on("slide.bs.carousel", function(e) {
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 3;
+            var totalItems = $(".carousel-item").length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+              var it = itemsPerSlide - (totalItems - idx);
+              for (var i = 0; i < it; i++) {
+                // append slides to end
+                if (e.direction == "left") {
+                  $(".carousel-item")
+                    .eq(i)
+                    .appendTo(".carousel-inner");
+                } else {
+                  $(".carousel-item")
+                    .eq(0)
+                    .appendTo($(this).find(".carousel-inner"));
+                }
+              }
+            }
+          });
+        });
+
     </script>
 </body>
 </html>
