@@ -601,5 +601,18 @@
         });
 
     </script>
+    <script type="text/javascript">
+        $.ajax({
+            url: "data/setting.json",
+            method: "GET",
+            success: function(res){
+                console.log(res)
+                $('title').html(res.site_title+ ' | ' +res.site_desc)
+            },
+            complete: function () {
+
+            }
+        })
+    </script>
 </body>
 </html>
