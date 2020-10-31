@@ -1,2 +1,2 @@
-<h1 align="center">Jhonarendra on Github</h1>
+<h1 align="center">Jhonarendra Github Page</h1>
 <p align="center">http://jhonarendra.github.io</p>
