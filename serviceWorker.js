@@ -1,23 +1,22 @@
-const staticDevCoffee = "jhonarendra-github-page"
+const staticDev = "jhonarendra-github-page"
 const assets = [
   "/",
   "/index.html",
-  "/css/chunk-00797870.2cde82c0.css",
-  "/css/chunk-5f105a4a.745ff886.css",
-  "/js/chunk-00797870.8d8ee841.js",
-  "/js/chunk-2d0a4d7f.4b8f6138.js",
-  "/js/chunk-2d210c47.c63e5c2d.js",
-  "/js/chunk-2d237cc7.72c4df05.js",
-  "/js/chunk-5f105a4a.1a55ed49.js",
-  "/css/app.530a9c2d.css",
+  "/css/app.fe1ad0de.css",
+  "/css/chunk-9e990cc2.6a51cf54.css",
+  "/css/chunk-559d6362.e3206653.css",
+  "/css/chunk-0702f8ba.e9e2e6a4.css",
+  "/css/chunk-4149efc3.3aef9e10.css",
+  "/css/chunk-c160f0e4.00715104.css",
   "/css/chunk-vendors.a2cadc9e.css",
-  "/js/app.a4b366bb.js",
+  "/js/app.52bc50e4.js",
+  "/js/chunk-9e990cc2.d8c7983e.js",
+  "/js/chunk-559d6362.21c8bc1a.js",
+  "/js/chunk-0702f8ba.73e76a71.js",
+  "/js/chunk-4149efc3.05a2b3ba.js",
+  "/js/chunk-c160f0e4.81082d3e.js",
   "/js/chunk-vendors.258ca154.js",
-  "/css/chunk-vendors.a2cadc9e.css",
-  "/css/app.530a9c2d.css",
-  "/js/chunk-vendors.258ca154.js",
-  "/js/app.a4b366bb.js",
-  "/fonts/QdVUSTchPBm7nuUeVf70viFl.0ae6341d.woff2",
+  "/img/arrow.90f33ec8.svg",
   "/img/awan1.7ef8d01e.png",
   "/img/awan2.208c8f63.png",
   "/img/awan3.2459c6f1.png",
@@ -25,12 +24,13 @@ const assets = [
   "/img/awan5.790f031d.png",
   "/img/awan6.3901d06f.png",
   "/img/jhonarendra.5841a674.png",
-  "/img/jhonarendra-2.3e4f1980.png"
+  "/img/jhonarendra-2.3e4f1980.png",
+  "/fonts/QdVUSTchPBm7nuUeVf70viFl.0ae6341d.woff2"
 ]
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then(cache => {
+    caches.open(staticDev).then(cache => {
       cache.addAll(assets)
     })
   )
