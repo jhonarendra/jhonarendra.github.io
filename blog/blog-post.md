@@ -17,4 +17,4 @@ Tetapi, ada beberapa kekurangan kalau pakai metode itu:
 - Sulit tambah, edit dan delete post. Karena harus membuka project, edit file `post.json`, lalu di build ulang, setelah itu diletakkan di repository page.
 - Sulit jika ingin menambah html tag seperti **bold**, *italic*, tabel, code, gambar dll.
 
-Maka dari itu, seperti kebanyakan blog github page, saya menggunakan markdown file `.md` untuk konten post.
+Maka dari itu, seperti kebanyakan blog github page, saya menggunakan markdown file `.md` untuk konten post. Mengedit post bisa langsung dari halaman github.
