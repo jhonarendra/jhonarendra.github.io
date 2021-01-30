@@ -5,7 +5,8 @@
 		"datetime" : "October 28, 2020 01:07:01",
 		"summary": "Hello world",
 		"slug": "hello-world",
-		"file": "hello-world.md"
+		"file": "hello-world.md",
+		"tag": "#hello"
 	},
 	{
 		"id": 2,
@@ -13,7 +14,8 @@
 		"datetime" : "October 30, 2020 22:25:41",
 		"summary": "November 2020 I was finished my github pages (Jhonarendra Github Pages).",
 		"slug": "my-github-pages",
-		"file": "my-github-pages.md"
+		"file": "my-github-pages.md",
+		"tag": "#story #github"
 	},
 	{
 		"id": 3,
@@ -21,7 +23,8 @@
 		"datetime" : "November 13, 2020 00:01:45",
 		"summary": "Lorem ipsum",
 		"slug": "testing",
-		"file": "testing.md"
+		"file": "testing.md",
+		"tag": "#hello"
 	},
 	{
 		"id": 4,
@@ -29,14 +32,16 @@
 		"datetime" : "December 12, 2020 11:01:45",
 		"summary": "Sebelumnya, blog post saya buat pada data json seperti ini",
 		"slug": "blog-post",
-		"file": "blog-post.md"
+		"file": "blog-post.md",
+		"tag": "#story"
 	},
 	{
 		"id": 5,
-		"title": "Post kelima",
-		"datetime" : "29 January, 2021 14:01:45",
+		"title": "Ada audit",
+		"datetime" : "January 1, 2021 14:01:45",
 		"summary": "Biar cepet",
-		"slug": "post-kelima",
-		"file": "post-kelima.md"
+		"slug": "ada-audit",
+		"file": "ada-audit.md",
+		"tag": "#story #github-page"
 	}
 ]
