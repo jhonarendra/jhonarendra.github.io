@@ -3,7 +3,7 @@
 		"id": 1,
 		"title": "Hello World",
 		"datetime" : "October 28, 2020 01:07:01",
-		"thumb": "",
+		"summary": "Hello world",
 		"slug": "hello-world",
 		"file": "hello-world.md"
 	},
@@ -11,7 +11,7 @@
 		"id": 2,
 		"title": "My Github Pages",
 		"datetime" : "October 30, 2020 22:25:41",
-		"thumb": "",
+		"summary": "November 2020 I was finished my github pages (Jhonarendra Github Pages).",
 		"slug": "my-github-pages",
 		"file": "my-github-pages.md"
 	},
@@ -19,7 +19,7 @@
 		"id": 3,
 		"title": "Testing with looooooooooooooooooooooooooong post title",
 		"datetime" : "November 13, 2020 00:01:45",
-		"thumb": "",
+		"summary": "Lorem ipsum",
 		"slug": "testing",
 		"file": "testing.md"
 	},
@@ -27,16 +27,16 @@
 		"id": 4,
 		"title": "Blog Post",
 		"datetime" : "December 12, 2020 11:01:45",
-		"thumb": "",
+		"summary": "Sebelumnya, blog post saya buat pada data json seperti ini",
 		"slug": "blog-post",
 		"file": "blog-post.md"
 	},
 	{
 		"id": 5,
-		"title": "Ada audit",
-		"datetime" : "January 1, 2021 14:01:00",
-		"thumb": "",
-		"slug": "ada-audit",
-		"file": "ada-audit.md"
+		"title": "Post kelima",
+		"datetime" : "29 January, 2021 14:01:45",
+		"summary": "Biar cepet",
+		"slug": "post-kelima",
+		"file": "post-kelima.md"
 	}
 ]
