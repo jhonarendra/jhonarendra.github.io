@@ -1,3 +1,0 @@
-November 2020 I was finished my github pages **(Jhonarendra Github Pages)**. Many improvement was added to this github pages that I built with **VueJS**. Pages, linking, data was so easy to manage with VueJS.
-
-The design was same with the previous. Black background, white text and dark blue accent. The animation of the *'clouds'* and other component is same too. *Single Page Application* (SPA) with VueJS is awesome! I was added *Progressive Web Apps* (PWA) functionality such as serviceWorker.js and manifest.json so this github page was PWA validated!
